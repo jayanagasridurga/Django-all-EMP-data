@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>THIS IS MY FRIST MVT PROGRAM</h1>
+    <ul class="list_group">
+        {% for data in emp %}
+        <li class="list_item">
+            Name={{data.Name}}
+        </li>
+        <li class="list_item">
+            Emp_Id={{data.Emp_Id}}
+        </li>
+        <li class="list_item">
+            Desi={{data.Desi}}
+        </li>
+        <li class="list_item">
+            Location={{data.Location}}
+        </li>
+        {% endfor %}
+    </ul>
+    
+</body>
+</html>
